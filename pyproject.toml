@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "demo"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Naddeo <anthony@whylabs.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+whylogs-container = {version = "1.0.20", source = "whylabs_container_gitlab", extras = ["llm"] }
+whylabs-llm-toolkit = {version = "0.1.11", source = "whylabs_container_gitlab", extras = ["infer"] }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[[tool.poetry.source]]
+name = "whylabs_container_gitlab"
+url = "https://gitlab.com/api/v4/projects/55361491/packages/pypi/simple"
+priority = "explicit"
+
