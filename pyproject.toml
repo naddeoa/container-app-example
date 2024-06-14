@@ -9,8 +9,6 @@ readme = "README.md"
 python = "^3.10"
 
 whylogs-container = {version = "1.0.20", source = "whylabs_container_gitlab", extras = ["llm"] }
-whylabs-llm-toolkit = {version = "0.1.11", source = "whylabs_container_gitlab", extras = ["infer"] }
-
 
 [build-system]
 requires = ["poetry-core"]
